@@ -6,7 +6,7 @@ The source data for the project is spread out into 7 different files which are p
 
    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    
-The "run_analysis.R" script associated with this project
+The "run_analysis.R" script associated with this project provides the required transformations on the data.
 
 The source data includes:
 
@@ -39,3 +39,7 @@ The original data is processed as follows:
 - Use melt/dcast to summarize the data by subject and activity
 - Write the result to the file "tidyData.txt"
 
+The tidyData.txt file contains the following fields:
+ - subject - a number in the range 1-30 indicating the particular subject performing the activity
+ - activity - one of LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS,WALKING_UPSTAIRS
+ - 79 measurements of the particular subject performing the particular activity
